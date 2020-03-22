@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/rectangle"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/rectangle"
+            />
+
+        <ImageView
+            android:id="@+id/leftarrow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/leftarrow" />
+
+        <ImageView
+            android:id="@+id/user"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/user" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reza "
+            android:textSize="20dp"
+            android:layout_marginLeft="105dp"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="online"
+            android:textSize="14dp"
+            android:layout_marginLeft="105dp"
+            android:layout_marginTop="40dp" />
+
+        <ImageView
+            android:id="@+id/videocall"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/videocall" />
+
+        <ImageView
+            android:id="@+id/telephone"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="320dp"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/telephone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#075e54"
+            android:layout_marginTop="70dp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/msgview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:divider="@null"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"></ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bottom"
+            android:layout_marginLeft="-7dp"
+            >
+
+<!--            <ImageView-->
+<!--                android:id="@+id/emoticon"-->
+<!--                android:layout_width="59dp"-->
+<!--                android:layout_height="34dp"-->
+<!--                android:layout_marginLeft="18dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:background="@drawable/emote" />-->
+
+            <EditText
+                android:id="@+id/msgr"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="3dp"
+                android:hint="Enter Your Message" />
+
+            <ImageView
+                android:id="@+id/attach"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="320dp"
+                android:background="@drawable/attach" />
+
+
+
+            <ImageView
+                android:id="@+id/send"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="370dp"
+                android:background="@drawable/send" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>
+
+
